@@ -2,198 +2,198 @@
 <html lang="id">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Classroom Attendance</title>
 
-<meta charset="UTF-8">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<title>Smart Classroom Attendance</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-<link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<div class="sidebar">
+    <!-- Sidebar -->
+    <div class="sidebar">
 
-<div class="logo">
+        <div class="logo">
+            <h2>SCA</h2>
+            <p>Smart Classroom Attendance</p>
+        </div>
 
-<h2>SCA</h2>
+        <ul>
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
 
-<p>Smart Classroom Attendance</p>
+            <li>
+                <i class="fa-solid fa-user-group"></i>
+                Data Siswa
+            </li>
 
-</div>
+            <li>
+                <i class="fa-solid fa-qrcode"></i>
+                Scan QR
+            </li>
 
-<ul>
+            <li>
+                <i class="fa-solid fa-chart-column"></i>
+                Laporan
+            </li>
+        </ul>
 
-<li class="active">
+    </div>
 
-<i class="fa-solid fa-house"></i>
+    <!-- Content -->
+    <div class="content">
 
-Dashboard
+        <!-- Header -->
+        <nav>
 
-</li>
+            <div>
 
-<li>
+                <h3 id="salam">Selamat Datang</h3>
 
-<i class="fa-solid fa-user-group"></i>
+                <p id="tanggal"></p>
 
-Data Siswa
+                <h5 id="jam"></h5>
 
-</li>
+            </div>
 
-<li>
+            <div>
+                <img src="https://i.pravatar.cc/60" alt="Foto Guru">
+            </div>
 
-<i class="fa-solid fa-qrcode"></i>
+        </nav>
 
-Scan QR
+        <!-- Statistik -->
+        <div class="row g-4 mt-3">
 
-</li>
+            <div class="col-lg-3">
 
-<li>
+                <div class="card-box">
 
-<i class="fa-solid fa-chart-column"></i>
+                    <h5>Jumlah Siswa</h5>
 
-Laporan
+                    <h1 class="counter">36</h1>
 
-</li>
+                </div>
 
-</ul>
+            </div>
 
-</div>
+            <div class="col-lg-3">
 
-<div class="content">
+                <div class="card-box green">
 
-<nav>
+                    <h5>Hadir</h5>
 
-<div>
+                    <h1 class="counter">31</h1>
 
-<h3>Dashboard</h3>
+                </div>
 
-<p>Selamat Datang, Pak Anjas 👋</p>
+            </div>
 
-</div>
+            <div class="col-lg-3">
 
-<div>
+                <div class="card-box yellow">
 
-<img src="https://i.pravatar.cc/60">
+                    <h5>Izin</h5>
 
-</div>
+                    <h1 class="counter">2</h1>
 
-</nav>
+                </div>
 
-<div class="row g-4 mt-2">
+            </div>
 
-<div class="col-lg-3">
+            <div class="col-lg-3">
 
-<div class="card-box">
+                <div class="card-box red">
 
-<h5>Jumlah Siswa</h5>
+                    <h5>Sakit</h5>
 
-<h1>36</h1>
+                    <h1 class="counter">3</h1>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-<div class="col-lg-3">
+        </div>
 
-<div class="card-box green">
+        <!-- Tabel -->
+        <div class="card mt-4">
 
-<h5>Hadir</h5>
+            <div class="card-body">
 
-<h1>31</h1>
+                <h4 class="mb-4">Absensi Hari Ini</h4>
 
-</div>
+                <table class="table table-hover">
 
-</div>
+                    <thead>
 
-<div class="col-lg-3">
+                        <tr>
 
-<div class="card-box yellow">
+                            <th>Nama</th>
 
-<h5>Izin</h5>
+                            <th>Status</th>
 
-<h1>2</h1>
+                            <th>Jam</th>
 
-</div>
+                        </tr>
 
-</div>
+                    </thead>
 
-<div class="col-lg-3">
+                    <tbody>
 
-<div class="card-box red">
+                        <tr>
 
-<h5>Sakit</h5>
+                            <td>Ahmad Fauzi</td>
 
-<h1>3</h1>
+                            <td>
+                                <span class="badge bg-success">
+                                    Hadir
+                                </span>
+                            </td>
 
-</div>
+                            <td>06.58</td>
 
-</div>
+                        </tr>
 
-</div>
+                        <tr>
 
-<div class="card mt-4">
+                            <td>Citra</td>
 
-<div class="card-body">
+                            <td>
+                                <span class="badge bg-warning text-dark">
+                                    Izin
+                                </span>
+                            </td>
 
-<h4>Absensi Hari Ini</h4>
+                            <td>-</td>
 
-<table class="table">
+                        </tr>
 
-<thead>
+                    </tbody>
 
-<tr>
+                </table>
 
-<th>Nama</th>
+            </div>
 
-<th>Status</th>
+        </div>
 
-<th>Jam</th>
+    </div>
 
-</tr>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>Ahmad Fauzi</td>
-
-<td><span class="badge bg-success">Hadir</span></td>
-
-<td>06.58</td>
-
-</tr>
-
-<tr>
-
-<td>Citra</td>
-
-<td><span class="badge bg-warning">Izin</span></td>
-
-<td>-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
-</div>
-
-<script src="assets/js/app.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/app.js"></script>
 
 </body>
 
