@@ -1,1 +1,277 @@
+/* ==========================================
+   SMART CLASSROOM ATTENDANCE
+   Version : 1.0
+========================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    display:flex;
+}
+
+/* ==========================
+        SIDEBAR
+========================== */
+
+.sidebar{
+
+    width:260px;
+    min-height:100vh;
+
+    background:#2563eb;
+
+    color:white;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+}
+
+.logo{
+
+    padding:30px;
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.2);
+
+}
+
+.logo h2{
+
+    font-size:35px;
+
+    font-weight:bold;
+
+}
+
+.logo p{
+
+    font-size:13px;
+
+    opacity:.8;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    margin-top:30px;
+
+}
+
+.sidebar ul li{
+
+    padding:18px 30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.sidebar ul li.active{
+
+    background:white;
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+}
+
+.sidebar i{
+
+    margin-right:12px;
+
+}
+
+/* ==========================
+        CONTENT
+========================== */
+
+.content{
+
+    margin-left:260px;
+
+    width:calc(100% - 260px);
+
+    padding:35px;
+
+}
+
+/* ==========================
+        NAVBAR
+========================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+nav img{
+
+    width:55px;
+
+    border-radius:50%;
+
+}
+
+/* ==========================
+        CARD
+========================== */
+
+.card-box{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card-box:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card-box h5{
+
+    color:#666;
+
+}
+
+.card-box h1{
+
+    margin-top:10px;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    color:#2563eb;
+
+}
+
+.green h1{
+
+    color:#22c55e;
+
+}
+
+.yellow h1{
+
+    color:#f59e0b;
+
+}
+
+.red h1{
+
+    color:#ef4444;
+
+}
+
+/* ==========================
+        TABLE
+========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+.sidebar{
+
+    width:90px;
+
+}
+
+.logo p{
+
+    display:none;
+
+}
+
+.logo h2{
+
+    font-size:20px;
+
+}
+
+.sidebar ul li{
+
+    text-align:center;
+
+}
+
+.sidebar i{
+
+    margin:0;
+
+}
+
+.sidebar li{
+
+    font-size:0;
+
+}
+
+.sidebar li i{
+
+    font-size:22px;
+
+}
+
+.content{
+
+    margin-left:90px;
+
+    width:calc(100% - 90px);
+
+}
+
+}
